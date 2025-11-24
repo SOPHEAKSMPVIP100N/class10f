@@ -71,7 +71,6 @@
   
   <script>
     function repeatText() {
-      const text = document.getElementById('textInput').value;
       let count = parseInt(document.getElementById('repeatCount').value);
       
       if (!text) {
@@ -99,7 +98,6 @@
     
     function copyOutput() {
       const output = document.getElementById('output');
-      navigator.clipboard.writeText(output.textContent)
         .then(() => alert("បានចម្លង!"))
         .catch(() => alert("មិនអាចចម្លងបានទេ!"));
     }
